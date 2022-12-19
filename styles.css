@@ -36,7 +36,7 @@ body {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-    gap: 1em;
+    gap: 2em;
     background: #3e357d;
     border-radius: 10px;
 }
