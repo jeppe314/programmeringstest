@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bahnschrift", "Helvetica Neue", "Helvetica";
+    font-size: 16px;
+    width: 100vw;
+    height: 100%;
+}
+
+#modal {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+#container {
+    position: relative;
+    background: black;
+    width: auto;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+#cards {
+    width: 50%;
+    padding: 2em;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    gap: 1em;
+}
+
+#card {
+    background: rgb(227, 227, 233);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 225px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+}
+
+#card-header {
+    height: 40%;
+    background-color: #fca311;
+}
+
+#card-body {
+    height: 60%;
+    position: relative;
+    width: 100%;
+    padding: 3em 1em;
+    background-color: #14213d;
+}
+
+#card-avatar {
+    width: 30%;
+    position: absolute;
+    top: -20%;
+    left: 5%;
+    border-radius: 50%;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#card-name {
+    margin-bottom: 1em;
+}
+
+/* STUFF */
+
+.blur {
+    filter: blur(5px);
+}
+
+.scaleUp {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.scaleDown {
+    transform: scale(1);
+    transition: all 0.3s;
+}
