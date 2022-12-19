@@ -70,9 +70,12 @@ fetch("https://reqres.in/api/users/")
                         `
                     })
             })
+            //Adds cards to div
             cards.appendChild(div)
         })
     })
+
+//Hides modal and unblurs cards when clicked outside of modal
 
 document.addEventListener("click", (event) => {
     if (modal.style.display === "block") {
